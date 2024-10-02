@@ -2,23 +2,27 @@
 <html lang="ru">
 <head>
     <title>CockTail</title>
-    <link href="outline/css/outline-prototype-safe.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+<!--    <link href="css/outline.css" rel="stylesheet">-->
     <meta charset="UTF-8">
     <meta name="keywords" content="коктейли, рецепты, бармен">
     <meta name="description" content="Сайт с информацией о коктейлях и всём, что с ними связано">
     <meta name="author" content="Толстов Данил M3303">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><img src="img/logo.png" alt="logo"></li>
-            <li><a href="index.html">Коктейли</a></li>
-            <li><a href="index.html">Ингредиенты</a></li>
-            <li><a href="index.html">Инвентарь</a></li>
-            <li><a href="index.html">Поиск</a></li>
+<header class="header">
+    <a class="header__logo" href="index.html"><img src="img/logo.png" alt="logo" class="header__logo-img"></a>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li><a href="index.html" class="header__nav-link">Коктейли</a></li>
+            <li><a href="index.html" class="header__nav-link">Ингредиенты</a></li>
+            <li><a href="index.html" class="header__nav-link">Инвентарь</a></li>
         </ul>
     </nav>
+    <div class="header__search">
+        <input type="text" placeholder="..." class="header__search-input">
+        <button class="header__search-button">Поиск</button>
+    </div>
 </header>
 <main>
     <article>
