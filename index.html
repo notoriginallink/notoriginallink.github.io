@@ -3,6 +3,7 @@
 <head>
     <title>CockTail</title>
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 <!--    <link href="css/outline.css" rel="stylesheet">-->
     <meta charset="UTF-8">
     <meta name="keywords" content="коктейли, рецепты, бармен">
@@ -11,88 +12,102 @@
 </head>
 <body>
 <header class="header">
-    <a class="header__logo" href="index.html"><img src="img/logo.png" alt="logo" class="header__logo-img"></a>
-    <nav class="header__nav">
-        <ul class="header__nav-list">
-            <li><a href="index.html" class="header__nav-link">Коктейли</a></li>
-            <li><a href="index.html" class="header__nav-link">Ингредиенты</a></li>
-            <li><a href="index.html" class="header__nav-link">Инвентарь</a></li>
+    <a class="logo" href="index.html"><img src="img/logo.png" alt="logo" class="logo__img"></a>
+    <nav class="header-nav">
+        <ul class="header-nav__list">
+            <li><a href="index.html" class="header-nav__item">Коктейль дня</a></li>
+            <li><a href="index.html" class="header-nav__item">Коктейли</a></li>
+            <li><a href="index.html" class="header-nav__item">Ингредиенты</a></li>
+            <li><a href="index.html" class="header-nav__item">Инвентарь</a></li>
         </ul>
     </nav>
-    <div class="header__search">
-        <input type="text" placeholder="..." class="header__search-input">
-        <button class="header__search-button">Поиск</button>
+    <div class="search">
+        <input type="text" placeholder="..." class="search__input">
+        <button class="button">Поиск</button>
     </div>
 </header>
-<main>
-    <article>
-        <h1>Коктейль дня</h1>
-        <section>
-            <img src="img/white_russian.jfif" alt="white_russian_cocktail">
-        </section>
-        <section>
-            <h2>Что потребуется</h2>
-            <section>
-                <h3>Ингредиенты:</h3>
-                <ul>
-                    <li>Водка</li>
-                    <li>Кофейный ликер</li>
-                    <li>Нежирные сливки</li>
-                    <li>Лед в кубиках</li>
-                </ul>
-                <h3>Инвентарь:</h3>
-                <ul>
-                    <li>Стакан Рокс</li>
-                    <li>Барная ложка</li>
-                    <li>Джиггер</li>
-                    <li>Трубочки (по желанию)</li>
-                </ul>
+<main class="main">
+<!--    <div class="main__line"><h1 class="title">Главная страница</h1></div>-->
+    <div class="main__line">
+        <article class="article article_bordered">
+            <div class="article__line article__line_title">
+                <h1 class="title title_large">Белый русский</h1>
+            </div>
+            <div class="article__line">
+                <section class="photo">
+                    <img src="img/white_russian.jfif" alt="white_russian_cocktail" class="photo__img">
+                </section>
+                <section class="recipe recipe_bordered">
+                    <section class="recipe__ingredients">
+                        <h2 class="recipe__title title_medium  ">Что потребуется:</h2>
+                        <div style="display: flex;">
+                            <div class="recipe__ingredients-part">
+                                <ul class="recipe__ingredients-list">
+                                    <li class="recipe__ingredients-item">Водка</li>
+                                    <li class="recipe__ingredients-item">Кофейный ликер</li>
+                                    <li class="recipe__ingredients-item">Нежирные сливки</li>
+                                    <li class="recipe__ingredients-item">Лед в кубиках</li>
+                                </ul>
+                            </div>
+                            <div class="recipe__ingredients-part ingredients-part_left-line">
+                                <ul class="recipe__ingredients-list">
+                                    <li class="recipe__ingredients-item">Стакан Рокс</li>
+                                    <li class="recipe__ingredients-item">Барная ложка</li>
+                                    <li class="recipe__ingredients-item">Джиггер</li>
+                                    <li class="recipe__ingredients-item">Трубочки (по желанию)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="recipe__title title_medium">Как готовить:</h2>
+                        <ol>
+                            <li class="recipe__ingredients-item">Охладить бокал и наполнить льдом доверху</li>
+                            <li class="recipe__ingredients-item">Налить водку, кофейный ликер и сливки по 50 мл</li>
+                            <li class="recipe__ingredients-item">Перемешать</li>
+                        </ol>
+                    </section>
+                </section>
+            </div>
+            <section class="article">
+                <h2>Интересное о коктейле</h2>
+                <p class="main__description-p">
+                    Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
+                    считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
+                    "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
+                    бла бла бла
+                </p>
             </section>
-        </section>
-        <section>
-            <h2>Рецепт приготовления</h2>
-            <ol>
-                <li>Охладить бокал и наполнить льдом доверху</li>
-                <li>Налить водку, кофейный ликер и сливки по 50 мл</li>
-                <li>Перемешать</li>
-            </ol>
-            <h2>Интересное о коктейле</h2>
-            <p>
-                Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
-                считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
-                "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
-                бла бла бла
-            </p>
-        </section>
-    </article>
-    <aside>
-        <h2>Похожие коктейли</h2>
-        <ul>
-            <li><a href="index.html">Черный русский</a></li>
-            <li><a href="index.html">Б-52</a></li>
-            <li><a href="index.html">Бостонский чай</a></li>
-        </ul>
-        <pre>
-                            ██▒▒██▒▒██
-                              ██▒▒██▒▒
-            ▒▒▒▒▒▒              ██▒▒██
-          ▒▒      ▒▒          ▒▒  ██▒▒
-          ▒▒  ██  ▒▒████████▒▒██    ██
-          ▒▒  ██          ▒▒  ██
-            ▒▒██░░░░░░░░▒▒░░░░██
-                ██░░░░░░░░░░██
-                  ██░░░░░░██
-                    ██████
-                      ██
-                      ██
-                      ██
-                      ██
-                      ██
-                      ██
-                      ██
-                  ████  ████
+        </article>
+        <aside class="aside">
+            <h2 class="main__recommendations-h2">Похожие коктейли</h2>
+            <ul class="main__recommendations-list">
+                <li class="main__recommendations-list-item"><a href="index.html">Черный русский</a></li>
+                <li class="main__recommendations-list-item"><a href="index.html">Б-52</a></li>
+                <li class="main__recommendations-list-item"><a href="index.html">Бостонский чай</a></li>
+            </ul>
+            <pre>
+                ██▒▒██▒▒██
+                  ██▒▒██▒▒
+▒▒▒▒▒▒              ██▒▒██
+▒▒      ▒▒          ▒▒  ██▒▒
+▒▒  ██  ▒▒████████▒▒██    ██
+▒▒  ██          ▒▒  ██
+▒▒██░░░░░░░░▒▒░░░░██
+    ██░░░░░░░░░░██
+      ██░░░░░░██
+        ██████
+          ██
+          ██
+          ██
+          ██
+          ██
+          ██
+          ██
+      ████  ████
         </pre>
-    </aside>
+        </aside>
+    </div>
 </main>
 <footer>
     <section><q>Кто не рискует - тот пьет безалкогольное.</q><sub>©Джейсон Стетхем</sub></section>
