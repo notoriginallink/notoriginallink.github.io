@@ -1,0 +1,51 @@
+.footer {
+    background-color: #264653;
+
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    color: whitesmoke;
+}
+
+.motivation {
+    justify-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+.underline {
+    width: 100%;
+}
+
+.quote {
+    margin: 0;
+    padding: 0;
+}
+
+.code-block {
+    margin: 0;
+    padding: 0;
+}
+
+.code-block__code {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts {
+    /*font-weight: bold;*/
+    margin-left: auto;
+    justify-self: flex-end;
+}

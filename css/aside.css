@@ -1,0 +1,52 @@
+/* Секция с похожими коктейлями и рекомендациями */
+.aside {
+    width: auto;
+    /*background-color: #fafafa;*/
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aside-h2 {
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.aside-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-list__item {
+    text-decoration: none;
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    /*background-color: #fefefe;*/
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: flex-start;
+}
+
+.aside-list__photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.aside-art {
+    color: #EFB366;
+}
+
+@media screen and (max-width: 768px) {
+    .aside {
+        display: none;
+    }
+}

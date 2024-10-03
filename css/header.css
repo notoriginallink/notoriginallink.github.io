@@ -1,13 +1,3 @@
-/*  ======  BODY  ======  */
-body {
-    margin: 0;
-    padding: 0;
-    /*background-color: whitesmoke;*/
-    background-color: #E9C46A;
-}
-
-
-
 /*  ======  HEADER  ======  */
 .header {
     background-color: #264653;
@@ -21,6 +11,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
 .logo {
@@ -79,4 +73,13 @@ body {
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .search {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+    }
 }
