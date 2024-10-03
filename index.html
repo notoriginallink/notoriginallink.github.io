@@ -4,6 +4,8 @@
     <title>CockTail</title>
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/aside.css" rel="stylesheet">
 <!--    <link href="css/outline.css" rel="stylesheet">-->
     <meta charset="UTF-8">
     <meta name="keywords" content="коктейли, рецепты, бармен">
@@ -69,7 +71,7 @@
                     </section>
                 </section>
             </div>
-            <section class="article">
+            <section class="info">
                 <h2>Интересное о коктейле</h2>
                 <p class="main__description-p">
                     Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
@@ -80,13 +82,15 @@
             </section>
         </article>
         <aside class="aside">
-            <h2 class="main__recommendations-h2">Похожие коктейли</h2>
-            <ul class="main__recommendations-list">
-                <li class="main__recommendations-list-item"><a href="index.html">Черный русский</a></li>
-                <li class="main__recommendations-list-item"><a href="index.html">Б-52</a></li>
-                <li class="main__recommendations-list-item"><a href="index.html">Бостонский чай</a></li>
+            <h2 class="aside-h2">Похожие коктейли</h2>
+            <ul class="aside-list">
+                <li><a href="index.html" class="aside-list__item"><img class="aside-list__photo" src="img/black-russian.jpg">Черный русский</a></li>
+                <li><hr></li>
+                <li><a href="index.html" class="aside-list__item"><img class="aside-list__photo" src="img/B-52.jpg">Б-52</a></li>
+                <li><hr></li>
+                <li><a href="index.html" class="aside-list__item"><img class="aside-list__photo" src="img/boston-tee.jpg">Бостонский чай</a></li>
             </ul>
-            <pre>
+            <pre class="aside-art">
                 ██▒▒██▒▒██
                   ██▒▒██▒▒
 ▒▒▒▒▒▒              ██▒▒██
@@ -105,24 +109,26 @@
           ██
           ██
       ████  ████
-        </pre>
+</pre>
         </aside>
     </div>
 </main>
-<footer>
-    <section><q>Кто не рискует - тот пьет безалкогольное.</q><sub>©Джейсон Стетхем</sub></section>
-    <section>
-        <pre>
-            <code>
-                while (true):
-                    if (glass.isEmpty())
-                        glass.fillWithDrink()
-                    me.drink(glass)
-            </code>
-        </pre>
-    </section>
-    <section>
-        С вопросами и пожеланиями tg: @notoriginallink
+<footer class="footer">
+    <div class="motivation">
+        <h3 class="title title_medium">Мотивация</h3>
+        <hr class="underline">
+        <section class="quote">
+            <q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub>
+        </section>
+        <section class="code-block">
+            <pre class="code-block__code"><code>while (true):
+    if (glass.isEmpty())
+        glass.fillWithDrink()
+    me.drink(glass)</code></pre>
+        </section>
+    </div>
+    <section class="contacts">
+        С вопросами и пожеланиями<br>tg:@notoriginallink
     </section>
 </footer>
 </body>

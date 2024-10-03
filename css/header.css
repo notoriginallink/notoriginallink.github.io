@@ -16,6 +16,7 @@ body {
     padding: 2vh 2vw 2vh;
     height: 10vh;
     width: 100%;
+    overflow: hidden;
 
     display: flex;
     justify-content: space-between;
