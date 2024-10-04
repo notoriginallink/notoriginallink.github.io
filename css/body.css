@@ -17,4 +17,5 @@ body {
     padding: 0;
     background-color: #E9C46A;
     font-family: 'iosevka', serif;
+    overflow-y: hidden;
 }

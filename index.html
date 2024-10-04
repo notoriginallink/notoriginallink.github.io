@@ -7,6 +7,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/aside.css" rel="stylesheet">
+    <link href="css/scrollbar.css" rel="stylesheet">
 <!--    <link href="css/outline.css" rel="stylesheet">-->
     <meta charset="UTF-8">
     <meta name="keywords" content="коктейли, рецепты, бармен">
@@ -32,70 +33,71 @@
         <button class="search__button">Поиск</button>
     </div>
 </header>
-<main class="main">
-    <div class="main__line">
-        <article class="content content_bordered">
-            <div class="content__line"><h1 class="title title_large">Белый русский</h1></div>
-            <div class="content__line"><hr class="content__h-divider"></div>
-            <div class="content__line">
-                <section class="photo">
-                    <img src="img/white_russian.jpg" alt="white_russian_cocktail" class="photo__img">
-                </section>
-                <section class="recipe recipe_bordered">
-                    <section class="recipe__ingredients">
-                        <h2 class="title title_recipe title_medium">Что потребуется:</h2>
-                        <div style="display: flex;">
-                            <div class="recipe__ingredients-part">
-                                <ul class="recipe__ingredients-list">
-                                    <li class="recipe__ingredients-item">Водка</li>
-                                    <li class="recipe__ingredients-item">Кофейный ликер</li>
-                                    <li class="recipe__ingredients-item">Нежирные сливки</li>
-                                    <li class="recipe__ingredients-item">Лед в кубиках</li>
-                                </ul>
-                            </div>
-                            <div class="recipe__ingredients-divider"></div>
-                            <div class="recipe__ingredients-part">
-                                <ul class="recipe__ingredients-list">
-                                    <li class="recipe__ingredients-item">Стакан Рокс</li>
-                                    <li class="recipe__ingredients-item">Барная ложка</li>
-                                    <li class="recipe__ingredients-item">Джиггер</li>
-                                    <li class="recipe__ingredients-item">Трубочки (по желанию)</li>
-                                </ul>
-                            </div>
-                        </div>
+<div class="scroll-container">
+    <main class="main">
+        <div class="main__line">
+            <article class="content content_bordered">
+                <div class="content__line"><h1 class="title title_large">Белый русский</h1></div>
+                <div class="content__line"><hr class="content__h-divider"></div>
+                <div class="content__line">
+                    <section class="photo">
+                        <img src="img/white_russian.jpg" alt="white_russian_cocktail" class="photo__img">
                     </section>
-                    <section>
-                        <h2 class="title title_recipe title_medium">Как готовить:</h2>
-                        <ol>
-                            <li class="recipe__ingredients-item">Охладить бокал и наполнить льдом доверху</li>
-                            <li class="recipe__ingredients-item">Налить водку, кофейный ликер и сливки по 50 мл</li>
-                            <li class="recipe__ingredients-item">Перемешать</li>
-                        </ol>
+                    <section class="recipe recipe_bordered">
+                        <section class="recipe__ingredients">
+                            <h2 class="title title_recipe title_medium">Что потребуется:</h2>
+                            <div style="display: flex;">
+                                <div class="recipe__ingredients-part">
+                                    <ul class="recipe__ingredients-list">
+                                        <li class="recipe__ingredients-item">Водка</li>
+                                        <li class="recipe__ingredients-item">Кофейный ликер</li>
+                                        <li class="recipe__ingredients-item">Нежирные сливки</li>
+                                        <li class="recipe__ingredients-item">Лед в кубиках</li>
+                                    </ul>
+                                </div>
+                                <div class="recipe__ingredients-divider"></div>
+                                <div class="recipe__ingredients-part">
+                                    <ul class="recipe__ingredients-list">
+                                        <li class="recipe__ingredients-item">Стакан Рокс</li>
+                                        <li class="recipe__ingredients-item">Барная ложка</li>
+                                        <li class="recipe__ingredients-item">Джиггер</li>
+                                        <li class="recipe__ingredients-item">Трубочки (по желанию)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h2 class="title title_recipe title_medium">Как готовить:</h2>
+                            <ol>
+                                <li class="recipe__ingredients-item">Охладить бокал и наполнить льдом доверху</li>
+                                <li class="recipe__ingredients-item">Налить водку, кофейный ликер и сливки по 50 мл</li>
+                                <li class="recipe__ingredients-item">Перемешать</li>
+                            </ol>
+                        </section>
                     </section>
-                </section>
-            </div>
-            <div class="content__line">
-                <section class="facts">
-                    <h2 class="title title_medium">Интересное о коктейле</h2>
-                    <p>
-                        Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
-                        считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
-                        "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
-                        бла бла бла
-                    </p>
-                </section>
-            </div>
-        </article>
-        <aside class="aside">
-            <h2 class="title title_aside title_medium">Похожие коктейли</h2>
-            <ul class="recommendations">
-                <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/black-russian.jpg" alt="black russian">Черный русский</a></li>
-                <li><hr></li>
-                <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/B-52.jpg" alt="b-52">Б-52</a></li>
-                <li><hr></li>
-                <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/boston-tee.jpg" alt="boston tee">Бостонский чай</a></li>
-            </ul>
-            <pre class="aside-art">
+                </div>
+                <div class="content__line">
+                    <section class="facts">
+                        <h2 class="title title_medium">Интересное о коктейле</h2>
+                        <p>
+                            Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
+                            считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
+                            "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
+                            бла бла бла
+                        </p>
+                    </section>
+                </div>
+            </article>
+            <aside class="aside">
+                <h2 class="title title_aside title_medium">Похожие коктейли</h2>
+                <ul class="recommendations">
+                    <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/black-russian.jpg" alt="black russian">Черный русский</a></li>
+                    <li><hr></li>
+                    <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/B-52.jpg" alt="b-52">Б-52</a></li>
+                    <li><hr></li>
+                    <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/boston-tee.jpg" alt="boston tee">Бостонский чай</a></li>
+                </ul>
+                <pre class="aside-art">
                 ██▒▒██▒▒██
                   ██▒▒██▒▒
 ▒▒▒▒▒▒              ██▒▒██
@@ -115,34 +117,35 @@
           ██
       ████  ████
 </pre>
-        </aside>
-    </div>
-</main>
-<footer class="footer">
-    <div class="footer__column">
-        <h1 class="title title_medium title_footer">Путь к успеху</h1>
-        <hr class="footer__h-divider">
-        <pre class="code">
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__column">
+            <h1 class="title title_medium title_footer">Путь к успеху</h1>
+            <hr class="footer__h-divider">
+            <pre class="code">
 <code><span class="code__keyword">while</span> (<span class="code__keyword">true</span>):
     <span class="code__keyword">if</span> (<span class="code__var">glass</span>.<span class="code__function">isEmpty</span>())
         <span class="code__var">glass</span>.<span class="code__function">fillWithDrink</span>()
     <span class="code__var">me</span>.<span class="code__function">drink</span>(<span class="code__var">glass</span>)</code></pre>
-    </div>
-    <div class="footer__column">
-        <h1 class="title title_medium title_footer">Мотивация</h1>
-        <hr class="footer__h-divider">
-        <p class="quote">
-            <q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub>
-        </p>
+        </div>
+        <div class="footer__column">
+            <h1 class="title title_medium title_footer">Мотивация</h1>
+            <hr class="footer__h-divider">
+            <p class="quote">
+                <q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub>
+            </p>
 
-    </div>
-    <div class="footer__column">
-        <h1 class="title title_medium title_footer">Контакты</h1>
-        <hr class="footer__h-divider">
-        <p class="contacts">
-            С вопросами и пожеланиями<br>tg:@notoriginallink
-        </p>
-    </div>
-</footer>
+        </div>
+        <div class="footer__column">
+            <h1 class="title title_medium title_footer">Контакты</h1>
+            <hr class="footer__h-divider">
+            <p class="contacts">
+                С вопросами и пожеланиями<br>tg:@notoriginallink
+            </p>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
