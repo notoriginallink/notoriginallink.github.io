@@ -40,7 +40,7 @@
 
 .content__h-divider {
     width: 100%;
-    border-bottom: 3px solid #264653;
+    border-bottom: 3px solid;
 }
 
 .content_bordered {
