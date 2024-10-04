@@ -1,72 +1,84 @@
-
-
-/* Блок main */
+/* MAIN */
 .main {
     padding: 10px 20px 10px;
-    /*background-color: whitesmoke;*/
+    margin: 70px auto 0;
+    width: 85%;
+
     background-color: #E9C46A;
     color: #264653;
-    width: 85%;
-    margin: 70px auto 0;
 }
 
 .main__line {
+    display: flex;
+    column-gap: 10px;
+
+    box-sizing: border-box;
     width: 100%;
     margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    gap: 1%;
 }
 
-/* ARTICLE */
-.article {
-    width: 100%;
-    background-color: #fff;
+
+/* CONTENT-BLOCK */
+.content {
     padding: 20px;
+    width: 100%;
+
+    background-color: #fff;
 }
 
-.article__line {
+.content__line {
     display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     justify-content: center;
     gap: 1%;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
 }
 
-.article__line_title {
-    margin-bottom: 10px;
+.content__h-divider {
+    width: 100%;
     border-bottom: 3px solid #264653;
 }
 
-.article_bordered {
+.content_bordered {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*.content_recipe BEM? {*
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+
+/*    padding: 0 20px 0;*/
+
+/*    background-color: #fefae0;*/
+/*}*/
+
+
 /* RECIPE */
 .recipe {
-    width: 100%;
-    background-color: #fefae0;
-    padding: 0 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding: 0 20px 0;
+    width: 100%;
 }
 
 .recipe_bordered {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    background-color: #fefae0;
 }
 
-.recipe__title {
-    width: 100%;
+.title_recipe {
     margin: 5px 0 15px;
-}
-
-.recipe__title_part {
-    margin-top: 0;
+    width: 100%;
 }
 
 .recipe__ingredients {
@@ -76,69 +88,88 @@
 }
 
 .recipe__ingredients-part{
-    /*padding: 0 15px;*/
     width: 50%;
 }
 
-.ingredients-part_left-line {
-    /*padding-left: 1%;*/
-    border-left: 1px solid #ccc;
+.recipe__ingredients-divider {
+    height: 100%;
+    width: 0;
+
+    border-right: 1px solid #264653;
 }
 
 .recipe__ingredients-list {
-    list-style: circle;
-    /*padding: 0;*/
     margin: 0;
+
+    list-style: circle;
 }
 
 .recipe__ingredients-item {
-    font-size: 16px;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 
 /* INFO */
-.info {
-    width: 100%;
+.facts {
+    width: auto;
 }
-
 
 
 /* TITLE */
-
 .title {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0 15px;
     font-size: 28px;
 }
+
 .title_large {
     font-size: 30px;
 }
+
 .title_medium {
     font-size: 24px;
 }
+
 .title_small {
     font-size: 18px;
 }
 
 
-
-
-/* Секция с фото коктейля */
+/* PHOTO */
 .photo {
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
     max-width: 200px;
-    height: 50%;
-    padding: 10px;
+    min-width: 150px;
+    height: auto;
+
     border-radius: 15px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+
     background-color: #fefae0;
 }
 
 .photo__img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    width: auto;
+    height: 100%;
+
     border-radius: 15px;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .main__line {
+        align-items: center;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .photo__img {
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 

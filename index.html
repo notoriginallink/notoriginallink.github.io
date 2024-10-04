@@ -34,17 +34,16 @@
 </header>
 <main class="main">
     <div class="main__line">
-        <article class="article article_bordered">
-            <div class="article__line article__line_title">
-                <h1 class="title title_large">Белый русский</h1>
-            </div>
-            <div class="article__line">
+        <article class="content content_bordered">
+            <div class="content__line"><h1 class="title title_large">Белый русский</h1></div>
+            <div class="content__line"><hr class="content__h-divider"></div>
+            <div class="content__line">
                 <section class="photo">
-                    <img src="img/white_russian.jfif" alt="white_russian_cocktail" class="photo__img">
+                    <img src="img/white_russian.jpg" alt="white_russian_cocktail" class="photo__img">
                 </section>
                 <section class="recipe recipe_bordered">
                     <section class="recipe__ingredients">
-                        <h2 class="recipe__title title_medium  ">Что потребуется:</h2>
+                        <h2 class="title title_recipe title_medium">Что потребуется:</h2>
                         <div style="display: flex;">
                             <div class="recipe__ingredients-part">
                                 <ul class="recipe__ingredients-list">
@@ -54,7 +53,8 @@
                                     <li class="recipe__ingredients-item">Лед в кубиках</li>
                                 </ul>
                             </div>
-                            <div class="recipe__ingredients-part ingredients-part_left-line">
+                            <div class="recipe__ingredients-divider"></div>
+                            <div class="recipe__ingredients-part">
                                 <ul class="recipe__ingredients-list">
                                     <li class="recipe__ingredients-item">Стакан Рокс</li>
                                     <li class="recipe__ingredients-item">Барная ложка</li>
@@ -65,7 +65,7 @@
                         </div>
                     </section>
                     <section>
-                        <h2 class="recipe__title title_medium">Как готовить:</h2>
+                        <h2 class="title title_recipe title_medium">Как готовить:</h2>
                         <ol>
                             <li class="recipe__ingredients-item">Охладить бокал и наполнить льдом доверху</li>
                             <li class="recipe__ingredients-item">Налить водку, кофейный ликер и сливки по 50 мл</li>
@@ -74,15 +74,17 @@
                     </section>
                 </section>
             </div>
-            <section class="info">
-                <h2>Интересное о коктейле</h2>
-                <p class="main__description-p">
-                    Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
-                    считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
-                    "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
-                    бла бла бла
-                </p>
-            </section>
+            <div class="content__line">
+                <section class="facts">
+                    <h2 class="title title_medium">Интересное о коктейле</h2>
+                    <p>
+                        Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
+                        считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
+                        "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
+                        бла бла бла
+                    </p>
+                </section>
+            </div>
         </article>
         <aside class="aside">
             <h2 class="aside-h2">Похожие коктейли</h2>

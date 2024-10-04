@@ -45,8 +45,12 @@
     color: #EFB366;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .aside {
+        width: 100%;
+    }
+
+    .aside-art {
         display: none;
     }
 }
