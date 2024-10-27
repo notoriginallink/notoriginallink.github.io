@@ -33,13 +33,7 @@
     width: 100%;
 }
 
-.quote {
-    margin: 0;
-    padding: 0;
-}
-
 .code {
-    margin: 0;
     padding: 5px;
 
     background-color: #2d2d2d;
@@ -60,10 +54,6 @@
 
 .code__var {
     color: #9CDCFE;
-}
-
-.contacts {
-    margin: 0;
 }
 
 .title_footer {
