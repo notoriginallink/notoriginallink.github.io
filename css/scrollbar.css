@@ -1,4 +1,7 @@
 .scroll-container {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
     margin-top: 70px;
     height: calc(100vh - 70px);
     overflow-y: auto;

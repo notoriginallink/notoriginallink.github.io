@@ -1,12 +1,5 @@
-.cocktails-list {
-    display: grid;
+.catalog-list_cocktails {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    justify-items: auto;
-    gap: 10px;
-
-    margin: 0 auto 0;
-    padding: 10px;
-    width: 100%;
 }
 
 .content_cocktail-item {
@@ -24,7 +17,12 @@
     color: #264653;
 }
 
+.content__photo_cocktail {
+    padding: 5px;
+    max-width: 200px;
+    min-width: 150px;
+}
+
 .content_cocktail-item:hover {
     color: #2A9D8F;
-    /*background-color: #fefae0;*/
 }

@@ -1,0 +1,34 @@
+.catalog-list_ingredients {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+}
+
+.content_ingredients-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    height: 130px;
+
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #264653;
+}
+
+.title_ingredients {
+    margin: 0;
+    font-size: 15px;
+}
+
+.content__photo_square {
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.content_ingredients-item:hover {
+    color: #2A9D8F;
+}

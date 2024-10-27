@@ -1,0 +1,9 @@
+.catalog-list {
+    display: grid;
+    justify-items: auto;
+    gap: 10px;
+
+    margin: 0 auto 0;
+    padding: 10px;
+    width: 100%;
+}
