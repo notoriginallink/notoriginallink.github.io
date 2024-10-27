@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="feat: add ingredients page">
+    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="feat: add gear page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gear.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gear.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,7 @@
       <workItem from="1728127650801" duration="2541000" />
       <workItem from="1728585816276" duration="2000" />
       <workItem from="1729327235030" duration="62000" />
-      <workItem from="1729955612244" duration="23212000" />
+      <workItem from="1729955612244" duration="27250000" />
     </task>
     <task id="LOCAL-00001" summary="doc: add README">
       <option name="closed" value="true" />
@@ -300,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730049684796</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat: add gear page">
+      <option name="closed" value="true" />
+      <created>1730050610636</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1730050610636</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +338,7 @@
     <MESSAGE value="feat: add table for lab3" />
     <MESSAGE value="feat: add cocktails page" />
     <MESSAGE value="feat: add ingredients page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add ingredients page" />
+    <MESSAGE value="feat: add gear page" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add gear page" />
   </component>
 </project>
