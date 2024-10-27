@@ -1,0 +1,40 @@
+.content_recipe {
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 20px 0;
+    width: 100%;
+}
+
+.title_recipe {
+    text-align: left;
+    margin: 5px 0 15px;
+    width: 100%;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ingredients__part{
+    width: 50%;
+}
+
+.ingredients__divider {
+    height: 100%;
+    width: 0;
+
+    border-right: 1px solid #264653;
+}
+
+.ingredients__list {
+    margin: 0;
+
+    list-style: circle;
+}
+
+.ingredients__list-item {
+    padding-bottom: 5px;
+}

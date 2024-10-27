@@ -3,6 +3,7 @@
     padding: 10px 20px 10px;
     margin: 0 auto 0;
     width: 85%;
+    height: auto;
 
     background-color: #E9C46A;
     color: #264653;
@@ -14,22 +15,26 @@
 
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     margin: 10px 0;
+
 }
 
 
 /* CONTENT-BLOCK */
-.content {
+.block {
     padding: 20px;
     width: 100%;
+    flex: 1;
 
     background-color: #fff;
 }
 
-.content__line {
+.block__line {
     display: flex;
     justify-content: center;
-    gap: 1%;
+    /*justify-content: space-between;*/
+    gap: 2%;
 
     box-sizing: border-box;
     margin: 0;
@@ -38,76 +43,15 @@
     height: auto;
 }
 
-.content__h-divider {
+.block__h-divider {
     width: 100%;
     border-bottom: 3px solid;
 }
 
-.content_bordered {
+.block_bordered {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/*.content_recipe BEM? {*
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-
-/*    padding: 0 20px 0;*/
-
-/*    background-color: #fefae0;*/
-/*}*/
-
-
-/* RECIPE */
-.recipe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 0 20px 0;
-    width: 100%;
-}
-
-.recipe_bordered {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-    background-color: #fefae0;
-}
-
-.title_recipe {
-    margin: 5px 0 15px;
-    width: 100%;
-}
-
-.recipe__ingredients {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.recipe__ingredients-part{
-    width: 50%;
-}
-
-.recipe__ingredients-divider {
-    height: 100%;
-    width: 0;
-
-    border-right: 1px solid #264653;
-}
-
-.recipe__ingredients-list {
-    margin: 0;
-
-    list-style: circle;
-}
-
-.recipe__ingredients-item {
-    padding-bottom: 5px;
-}
-
 
 /* INFO */
 .facts {
@@ -119,6 +63,11 @@
 .title {
     margin: 15px 0 15px;
     font-size: 28px;
+    width: auto;
+}
+
+.title_center {
+    text-align: center;
 }
 
 .title_large {
@@ -134,29 +83,6 @@
 }
 
 
-/* PHOTO */
-.photo {
-    display: flex;
-    align-items: center;
-
-    padding: 5px;
-    max-width: 200px;
-    min-width: 150px;
-    height: auto;
-
-    border-radius: 15px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-
-    background-color: #fefae0;
-}
-
-.photo__img {
-    width: auto;
-    height: 100%;
-
-    border-radius: 15px;
-    overflow: hidden;
-}
 
 
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+}
+
+.content_photo-block {
+    display: flex;
+    justify-content: center;
+
+    padding: 5px;
+    max-width: 200px;
+    min-width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+
+.photo__img {
+    width: auto;
+    height: 100%;
+
+    border-radius: 15px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.content_bordered {
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content_accent {
+    background-color: #fefae0;
+}

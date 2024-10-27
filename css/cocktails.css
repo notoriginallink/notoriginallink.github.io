@@ -1,0 +1,30 @@
+.cocktails-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: auto;
+    gap: 10px;
+
+    margin: 0 auto 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.content_cocktail-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 5px;
+    width: auto;
+    height: 300px;
+
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #264653;
+}
+
+.content_cocktail-item:hover {
+    color: #2A9D8F;
+    /*background-color: #fefae0;*/
+}
