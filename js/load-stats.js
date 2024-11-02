@@ -1,5 +1,5 @@
 window.addEventListener('load', function() {
-    const time = (window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart);
+    const time = (window.performance.now().toFixed(0));
 
     // create title
     const title = document.createElement('h1');
