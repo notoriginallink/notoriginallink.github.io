@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="en">
+<!doctype HTML>
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Коктейли</title>
+    <title>Калькулятор вечеринок</title>
     <link href="../img/icon.svg" rel="icon">
     <link href="../css/body.css" rel="stylesheet">
     <link href="../css/header.css" rel="stylesheet">
@@ -13,10 +13,12 @@
     <link href="../css/cocktails.css" rel="stylesheet">
     <link href="../css/content.css" rel="stylesheet">
     <link href="../css/catalog.css" rel="stylesheet">
-<!--    <link href="../css/outline.css" rel="stylesheet">-->
+<!--        <link href="../css/outline.css" rel="stylesheet">-->
+    <link href="../css/calculator.css" rel="stylesheet">
 
     <script src="../js/load-stats.js"></script>
     <script src="../js/active-navigation.js"></script>
+    <script src="../js/calculator-parameters.js"></script>
 </head>
 <body>
 <header class="header">
@@ -46,33 +48,43 @@
     <main class="main">
         <div class="main__line">
             <div class="block block_bordered">
-                <div class="block__line"><h1 class="title title_center title_large">Список коктейлей</h1></div>
+                <div class="block__line"><h1 class="title title_center title_large">Калькулятор вечеринок</h1></div>
                 <div class="block__line"><hr class="block__h-divider"></div>
                 <div class="block__line">
-                    <div class="catalog-list catalog-list_cocktails">
-                        <a class="content content_cocktail-item content_bordered" href="ingredients.html">
-                            <div class="content__photo-box content__photo_cocktail"><img class="content__photo-img" src="../img/preview/black-russian-preview.png"> </div>
-                            <h1 class="title title_medium title_center">Черный русский</h1>
-                        </a>
-                        <a class="content content_cocktail-item content_bordered" href="ingredients.html">
-                            <div class="content__photo-box content__photo_cocktail"><img class="content__photo-img" src="../img/preview/B-52-preview.png"> </div>
-                            <h1 class="title title_medium title_center">Б-52</h1>
-                        </a>
-                        <a class="content content_cocktail-item content_bordered" href="ingredients.html">
-                            <div class="content__photo-box content__photo_cocktail"><img class="content__photo-img" src="../img/preview/boston-tee-preview.png"> </div>
-                            <h1 class="title title_medium title_center">Бостонский чай</h1>
-                        </a>
-                        <a class="content content_cocktail-item content_bordered" href="ingredients.html">
-                            <div class="content__photo-box content__photo_cocktail"><img class="content__photo-img" src="../img/preview/white-russian-preview.png"> </div>
-                            <h1 class="title title_medium title_center">Белый русский</h1>
-                        </a>
-                        <a class="content content_cocktail-item content_bordered" href="ingredients.html">
-                            <div class="content__photo-box content__photo_cocktail"><img class="content__photo-img" src="../img/preview/moscow-mule-preview.png"> </div>
-                            <h1 class="title title_medium title_center">Московский мул</h1>
-                        </a>
+                    <div class="parameters-container">
+                        <div class="parameter" id="people_parameter">
+                            <div class="parameter__name">Количество человек</div>
+                            <div class="parameter__value">
+                                <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
+                                <input class="parameter__value-input" placeholder="0">
+                                <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
+                            </div>
+                        </div>
+                        <div class="parameter" id="duration_parameter">
+                            <div class="parameter__name">Длительность (часов)</div>
+                            <div class="parameter__value">
+                                <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
+                                <input class="parameter__value-input" placeholder="0">
+                                <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
+                            </div>
+                        </div>
+                        <div class="parameter-row">
+                            <div class="parameter" id="fun_parameter">
+                                <div class="parameter__name">Желаемое веселье</div>
+                                <div class="parameter__value">
+                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                                </div>
+                            </div>
+                            <span class="parameter-description">Завтра на работу</span>
+                        </div>
                     </div>
                 </div>
-                <div class="block__line"><hr class="block__h-divider"></div>
+                <div>
+
+                </div>
             </div>
         </div>
     </main>
@@ -89,17 +101,13 @@
         <div class="footer__column">
             <h1 class="title title_medium title_footer">Мотивация</h1>
             <hr class="footer__h-divider">
-            <p class="quote">
-                <q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub>
-            </p>
+            <p><q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub></p>
 
         </div>
         <div class="footer__column">
             <h1 class="title title_medium title_footer">Контакты</h1>
             <hr class="footer__h-divider">
-            <p class="contacts">
-                С вопросами и пожеланиями<br>tg:@notoriginallink
-            </p>
+            <p>С вопросами и пожеланиями<br>tg:@notoriginallink</p>
         </div>
     </footer>
 </div>
