@@ -58,7 +58,6 @@
 }
 
 .menu-item__delete:active {
-    /*filter: none;*/
     background-color: rgba(153, 0, 0, 0.2);
 }
 
