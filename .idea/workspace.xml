@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="feat: add hover and active effect to menu delete button">
+    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="feat: add hover and active effect to parameters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/calculator/parameters.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/calculator/parameters.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calculator-parameters.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator-parameters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calculator/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/calculator/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/calculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +103,7 @@
       <workItem from="1730542108615" duration="8400000" />
       <workItem from="1730911714715" duration="18316000" />
       <workItem from="1730973888485" duration="14209000" />
-      <workItem from="1731067705916" duration="7260000" />
+      <workItem from="1731067705916" duration="14309000" />
     </task>
     <task id="LOCAL-00001" summary="doc: add README">
       <option name="closed" value="true" />
@@ -401,14 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731074065083</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="feat: add hover and active effect to parameters">
+      <option name="closed" value="true" />
+      <created>1731075147306</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1731075147306</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add footer and scratch" />
     <MESSAGE value="feat: add stylesheet for header" />
     <MESSAGE value="feat: complete cocktail recipe kinda" />
     <MESSAGE value="feat: version 1.0 - everything is done (somehow)" />
@@ -433,6 +440,7 @@
     <MESSAGE value="feat: add menu result and search form" />
     <MESSAGE value="refactor: css keywords order" />
     <MESSAGE value="feat: add hover and active effect to menu delete button" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add hover and active effect to menu delete button" />
+    <MESSAGE value="feat: add hover and active effect to parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add hover and active effect to parameters" />
   </component>
 </project>

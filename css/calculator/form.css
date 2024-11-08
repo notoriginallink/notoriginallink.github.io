@@ -35,7 +35,13 @@
     color: inherit;
 }
 
+.form__input_active {
+    border-radius: 10px 0 0 0;
+}
+
 .form__input-hints {
+    display: none;
+
     position: absolute;
     top: 100%;
 
@@ -53,19 +59,36 @@
     list-style: none;
 }
 
+.form__input-hints_active {
+    display: block;
+}
+
 .form__input-hints-item {
     padding: 5px 0 5px 20px;
 
     font-size: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
 }
 
 .form__input-hints-item_last {
     border-bottom: none;
+    border-radius: 0 0 10px 10px;
 }
 
-.form__input-hints_active {
-    display: block;
+.form__input-hints-item_error {
+    text-align: center;
+    font-weight: bold;
+}
+
+.form__input-hints-item_highlight {
+    background-color: #2A9D8F;
+    color: whitesmoke;
+}
+
+.form__input-hints.hidden {
+    display: none;
 }
 
 .form__submit {
@@ -82,4 +105,14 @@
     color: whitesmoke;
 
     cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.form__submit:hover {
+    background-color: #2A9D8F;
+}
+
+.form__submit:active {
+    background-color: #264653;
 }
