@@ -81,9 +81,26 @@ class RangeParameter {
             }
         }
 
-        if (this.descriptionElement !== null) {
-            this.descriptionElement.innerText = level[1];
-        }
+        this.updateDescription(level[1]);
+    }
+
+    updateDescription(newText) {
+        if (this.descriptionElement == null)
+            return;
+
+        if (this.descriptionElement.innerText === newText)
+            return;
+
+        // Hide description
+        this.descriptionElement.classList.add('hidden');
+
+        // Wait until transition in CSS completes
+        setTimeout(() => {
+            this.descriptionElement.innerText = newText;
+
+            // Reveal description back
+            this.descriptionElement.classList.remove('hidden');
+        }, 200)
     }
 }
 

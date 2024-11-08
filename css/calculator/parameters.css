@@ -30,6 +30,12 @@
 
 .parameter-description {
     font-weight: bold;
+
+    transition: opacity 0.2s ease;
+}
+
+.parameter-description.hidden {
+    opacity: 0;
 }
 
 .parameter__name {
@@ -50,7 +56,7 @@
     border: none;
     border-radius: 5px;
 
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.065);
     text-align: center;
     font-family: inherit;
 }
@@ -69,21 +75,32 @@
 
     background-color: rgba(0, 0, 0, 0.1);
     font-weight: bold;
+
+    transition: background-color 0.3s ease;
 }
 
-.parameter__button_low {
+.parameter__button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.parameter__button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.parameter__button_low, .parameter__button_low:hover {
     background-color: #8AB17D;
 }
 
-.parameter__button_mid {
+
+.parameter__button_mid, .parameter__button_mid:hover {
     background-color: #E9C46A;
 }
 
-.parameter__button_high {
+.parameter__button_high, .parameter__button_high:hover {
     background-color: #F4A261;
 }
 
-.parameter__button_extreme {
+.parameter__button_extreme, .parameter__button_extreme:hover{
     background-color: #E76F51;
 }
 
