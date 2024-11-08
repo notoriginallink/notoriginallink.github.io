@@ -71,8 +71,6 @@ class RangeParameter {
         return this.levels[index];
     }
 
-    evaluate
-
     updateRange = () => {
         let level = this.evaluateLevel();
 
