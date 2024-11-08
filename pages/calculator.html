@@ -13,6 +13,7 @@
     <link href="../css/cocktails.css" rel="stylesheet">
     <link href="../css/content.css" rel="stylesheet">
     <link href="../css/catalog.css" rel="stylesheet">
+    <link href="../css/ingredients.css" rel="stylesheet">
 <!--        <link href="../css/outline.css" rel="stylesheet">-->
     <link href="../css/calculator.css" rel="stylesheet">
 
@@ -56,7 +57,7 @@
                             <div class="parameter__name">Количество человек</div>
                             <div class="parameter__value">
                                 <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
-                                <input class="parameter__value-input" placeholder="0">
+                                <input class="parameter__value-input" placeholder="0" type="number">
                                 <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
                             </div>
                         </div>
@@ -64,7 +65,7 @@
                             <div class="parameter__name">Длительность (часов)</div>
                             <div class="parameter__value">
                                 <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
-                                <input class="parameter__value-input" placeholder="0">
+                                <input class="parameter__value-input" placeholder="0" type="number" >
                                 <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
                             </div>
                         </div>
@@ -82,9 +83,50 @@
                         </div>
                     </div>
                 </div>
-                <div>
-
+                <div class="block__line"><hr class="block__h-divider"></div>
+                <div class="block__line">
+                    <form class="form">
+                        <label for="cocktail_name" class="title title_medium title_center">Добавить коктейль в меню</label><br>
+                        <div class="form__search">
+                            <input class="form__input" type="text" id="cocktail_name" required autocomplete="off" placeholder="Название коктейля">
+                            <button class="form__submit" type="submit">Добавить</button>
+                        </div>
+                        <ul class="form__input-hints">
+                            <li class="form__input-hints-item form__input-hints-item_last">Маргарита</li>
+                        </ul>
+                    </form>
                 </div>
+                <div class="block__line">
+                    <ul class="menu content_accent content_bordered">
+                        <li class="menu-item">
+                            <div class="menu-item__name">
+                                <div class="content__photo-box content__photo_square"><img src='../img/preview/moscow-mule-preview.png' class="content__photo-img content__photo-img_cut"></div>
+                                <h1 class="title_large title_medium">Name</h1>
+                            </div>
+<!--                            <div class="calc-result-list-item__options">-->
+<!--                                <span>Эту позицию будут пить все?</span>-->
+<!--                                <label><input type="checkbox">Да</label>-->
+<!--                                <label><input type="checkbox">Нет</label>-->
+<!--                                <div class="parameter">-->
+<!--                                    <div class="parameter__value">-->
+<!--                                        <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>-->
+<!--                                        <input class="parameter__value-input" placeholder="0" type="number">-->
+<!--                                        <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <button class="menu-item__delete"><img src="../img/calculator/trash_bin_icon.svg" class="menu-item__delete-img"></button>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item__name">
+                                <div class="content__photo-box content__photo_square"><img src='../img/preview/boston-tee-preview.png' class="content__photo-img content__photo-img_cut"></div>
+                                <h1 class="title_large title_medium">Name2</h1>
+                            </div>
+                            <button class="menu-item__delete"><img src="../img/calculator/trash_bin_icon.svg" class="menu-item__delete-img"></button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block__line"><h1 class="title title_medium ">План покупок</h1></div>
             </div>
         </div>
     </main>

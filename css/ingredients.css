@@ -29,6 +29,11 @@
     height: 100px;
 }
 
+.content__photo_cover {
+    object-fit: cover;
+    object-position: top;
+}
+
 .content_ingredients-item:hover {
     color: #2A9D8F;
 }
