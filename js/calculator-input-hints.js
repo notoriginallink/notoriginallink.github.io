@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputElement = document.getElementsByClassName('form__input')[0];
     const hintsElement = document.getElementsByClassName('form__input-hints')[0];
 
-    const cocktails = [
-        'Б-52', 'Маргарита', "Мохито", "Кровавая мери", "Белый русский", "Шприц", "Ерш"
-    ];
+    const cocktails = JSON.parse(localStorage.getItem('cocktails-data') || '[]')
+        .map(item => item.name);
 
     let currentIndex = -1;
 

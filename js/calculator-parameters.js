@@ -1,16 +1,12 @@
 class CounterParameter {
-    value = 0;
-
-    constructor(parameter) {
+    constructor(parameter, parameterName) {
         const buttons = parameter.querySelectorAll('button');
         this.decButton = buttons[0];
         this.incButton = buttons[1];
         this.inputElement = parameter.querySelector('input');
+        this.parameterName = parameterName;
 
-        const storedValue = parseInt(this.inputElement.value);
-        if (!isNaN(storedValue)) {
-            this.value = storedValue;
-        }
+        this.value = parseInt(JSON.parse(localStorage.getItem(this.parameterName) || '0'));
 
         this.updateInput();
 
@@ -31,14 +27,13 @@ class CounterParameter {
         this.value += 1;
         this.updateInput();
     }
-
     updateInput = () => {
         this.inputElement.value = this.value.toString();
+        localStorage.setItem(this.parameterName, this.value.toString());
     }
 }
 
 class RangeParameter {
-    value = 1;
     levels = [
         ['parameter__button_low', 'Завтра на работу'],
         ['parameter__button_mid', 'Обычная вечеринка'],
@@ -46,9 +41,13 @@ class RangeParameter {
         ['parameter__button_extreme', 'Легендарная встреча']
     ];
 
-    constructor(parameter) {
+    constructor(parameter, parameterName) {
         this.buttons = parameter.querySelectorAll('button');
         this.descriptionElement = parameter.nextElementSibling;
+        this.parameterName = parameterName;
+
+        this.value = parseInt(JSON.parse(localStorage.getItem(this.parameterName) || '1'));
+
         this.updateRange();
 
         this.buttons.forEach(button=>
@@ -71,7 +70,7 @@ class RangeParameter {
         return this.levels[index];
     }
 
-    updateRange = () => {
+    updateRange() {
         let level = this.evaluateLevel();
 
         for (let i = 0; i < this.buttons.length; i += 1) {
@@ -82,6 +81,8 @@ class RangeParameter {
         }
 
         this.updateDescription(level[1]);
+
+        localStorage.setItem(this.parameterName, this.value.toString());
     }
 
     updateDescription(newText) {
@@ -105,7 +106,7 @@ class RangeParameter {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    const people = new CounterParameter(document.getElementById("people_parameter"));
-    const duration = new CounterParameter(document.getElementById("duration_parameter"));
+    const people = new CounterParameter(document.getElementById("people_parameter"), 'people_parameter');
+    const duration = new CounterParameter(document.getElementById("duration_parameter"), 'duration_parameter');
     const fun = new RangeParameter(document.getElementById("fun_parameter"));
 })
