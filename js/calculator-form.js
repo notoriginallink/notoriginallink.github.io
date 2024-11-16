@@ -1,9 +1,9 @@
+import {cocktailsData} from "./data.js";
+
 document.addEventListener('DOMContentLoaded', () => {
     const formElement = document.getElementsByClassName('form')[0];
     const inputElement = document.getElementsByClassName('form__input')[0];
     const menuElement = document.getElementsByClassName('menu')[0];
-
-    const cocktailsDb = JSON.parse(localStorage.getItem('cocktails-data') || '[]');
 
     loadDataFromLocalStorage(menuElement);
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const cocktailName = inputElement.value.trim();
 
-        const cocktailData = cocktailsDb.find((cock) => cock.name === cocktailName);
+        const cocktailData = cocktailsData.find((cock) => cock.name === cocktailName);
 
         if (cocktailData && !isInLocalStorage(cocktailData)) {
             saveToLocalStorage(cocktailData);

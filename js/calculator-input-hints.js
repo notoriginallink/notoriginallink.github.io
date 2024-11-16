@@ -1,9 +1,10 @@
+import {cocktailsData} from "./data.js";
+
 document.addEventListener('DOMContentLoaded', () => {
     const inputElement = document.getElementsByClassName('form__input')[0];
     const hintsElement = document.getElementsByClassName('form__input-hints')[0];
 
-    const cocktails = JSON.parse(localStorage.getItem('cocktails-data') || '[]')
-        .map(item => item.name);
+    const cocktailsNames = cocktailsData.map(item => item.name);
 
     let currentIndex = -1;
 
@@ -128,10 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         inputValue = inputValue.toLowerCase();
         let filteredCocks = [];
-        cocktails.map(function (item) {
+        cocktailsNames.map(function (item) {
             let cock = item.toLowerCase().split(' ');
+            let fl = false;
             cock.map(function (cockPart) {
-                let fl = false;
                 if (!fl && cockPart.startsWith(inputValue)) {
                     filteredCocks.push(item);
                     fl = true;
