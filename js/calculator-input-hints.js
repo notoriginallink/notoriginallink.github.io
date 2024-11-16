@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             hintsElement.classList.remove('form__input-hints_active');
             inputElement.classList.remove('form__input_active');
-        }, 100);
+        }, 250);
     });
 
     // update hints-container with every change of input
