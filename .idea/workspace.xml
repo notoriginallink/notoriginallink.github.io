@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="refactor: export cocktails data instead of LocalStorage. Fix cocktails double appearing in hints">
+    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="fix: click on hints menu timeout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calculator-input-hints.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator-input-hints.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/calculator-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator/calculator-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/calculator-input-hints.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator/calculator-input-hints.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/calculator-parameters.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator/calculator-parameters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/calculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +69,7 @@
       <recent name="C:\Users\ladyp\WebstormProjects\notoriginallink.github.io\fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ladyp\WebstormProjects\notoriginallink.github.io\js\calculator" />
       <recent name="C:\Users\ladyp\WebstormProjects\notoriginallink.github.io\img\pretty" />
       <recent name="C:\Users\ladyp\WebstormProjects\notoriginallink.github.io\img\preview" />
       <recent name="C:\Users\ladyp\WebstormProjects\notoriginallink.github.io\img" />
@@ -103,7 +108,11 @@
       <workItem from="1730911714715" duration="18316000" />
       <workItem from="1730973888485" duration="14209000" />
       <workItem from="1731067705916" duration="23938000" />
-      <workItem from="1731754005052" duration="1544000" />
+      <workItem from="1731754005052" duration="2264000" />
+      <workItem from="1732128744440" duration="595000" />
+      <workItem from="1732201830012" duration="8542000" />
+      <workItem from="1732272420529" duration="505000" />
+      <workItem from="1732274996159" duration="17839000" />
     </task>
     <task id="LOCAL-00001" summary="doc: add README">
       <option name="closed" value="true" />
@@ -433,14 +442,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731755447590</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fix: click on hints menu timeout">
+      <option name="closed" value="true" />
+      <created>1731755700345</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1731755700345</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add aside and fonts" />
     <MESSAGE value="doc: fix README" />
     <MESSAGE value="refactor: fixed some selectors in header" />
     <MESSAGE value="refactor: fixed some selectors in main" />
@@ -465,6 +481,7 @@
     <MESSAGE value="feat: add support for input hints" />
     <MESSAGE value="feat: complete lab5" />
     <MESSAGE value="refactor: export cocktails data instead of LocalStorage. Fix cocktails double appearing in hints" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: export cocktails data instead of LocalStorage. Fix cocktails double appearing in hints" />
+    <MESSAGE value="fix: click on hints menu timeout" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: click on hints menu timeout" />
   </component>
 </project>

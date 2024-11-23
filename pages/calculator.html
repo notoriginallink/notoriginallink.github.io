@@ -4,27 +4,17 @@
     <meta charset="UTF-8">
     <title>Калькулятор вечеринок</title>
     <link href="../img/icon.svg" rel="icon">
-    <link href="../css/body.css" rel="stylesheet">
-    <link href="../css/header.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/footer.css" rel="stylesheet">
-    <link href="../css/aside.css" rel="stylesheet">
-    <link href="../css/scrollbar.css" rel="stylesheet">
-    <link href="../css/cocktails.css" rel="stylesheet">
-    <link href="../css/content.css" rel="stylesheet">
-    <link href="../css/catalog.css" rel="stylesheet">
-    <link href="../css/ingredients.css" rel="stylesheet">
-<!--        <link href="../css/outline.css" rel="stylesheet">-->
-    <link href="../css/calculator/form.css" rel="stylesheet">
-    <link href="../css/calculator/menu.css" rel="stylesheet">
-    <link href="../css/calculator/parameters.css" rel="stylesheet">
+
+    <link href="../css/master.css" rel="stylesheet">
+    <!--        <link href="../css/outline.css" rel="stylesheet">-->
 
     <script src="../js/load-stats.js"></script>
     <script src="../js/active-navigation.js"></script>
-    <script src="../js/calculator-parameters.js"></script>
-    <script type="module" src="../js/calculator-input-hints.js"></script>
-    <script type="module" src="../js/calculator-form.js"></script>
+    <script src="../js/calculator/calculator-parameters.js"></script>
+    <script type="module" src="../js/calculator/calculator-input-hints.js"></script>
+    <script type="module" src="../js/calculator/calculator-form.js"></script>
     <script type="module" src="../js/data.js"></script>
+    <script src="../js/calculator/calculator-needs.js"></script>
 </head>
 <body>
 <header class="header">
@@ -88,10 +78,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="block__line"><hr class="block__h-divider"></div>
                 <div class="block__line">
                     <form class="form">
-                        <label for="cocktail_name" class="title title_medium title_center">Добавить коктейль в меню</label><br>
                         <div class="form__search">
                             <input class="form__input" type="text" id="cocktail_name" required autocomplete="off" placeholder="Название коктейля">
                             <button class="form__submit">Добавить</button>
@@ -100,7 +88,16 @@
                     </form>
                 </div>
                 <div class="block__line"><ul class="menu menu_empty content_accent content_bordered"></ul></div>
-                <div class="block__line"><h1 class="title title_medium ">План покупок</h1></div>
+
+                <div class="block__line"><h1 class="title title_large ">План покупок</h1></div>
+                <div class="block__line">
+                    <div class="calculate">
+                        <button class="calculate__button">создать</button>
+                        <div class="calculate__preloader"><img class="calculate__preloader-img" src="../img/preloader.gif"></div>
+                        <div class="calculate__error">Что-то пошло не так ⚠</div>
+                    </div>
+                </div>
+                <div class="block__line"><ol class="needs content_bordered content_accent needs_empty"></ol></div>
             </div>
         </div>
     </main>

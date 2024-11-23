@@ -108,5 +108,5 @@ class RangeParameter {
 window.addEventListener("DOMContentLoaded", () => {
     const people = new CounterParameter(document.getElementById("people_parameter"), 'people_parameter');
     const duration = new CounterParameter(document.getElementById("duration_parameter"), 'duration_parameter');
-    const fun = new RangeParameter(document.getElementById("fun_parameter"));
+    const fun = new RangeParameter(document.getElementById("fun_parameter"), "fun_parameter");
 })

@@ -23,5 +23,5 @@ export const cocktailsData = [
         name: 'Московский мул',
         image: '../img/preview/moscow-mule-preview.png',
         ingredients: ['Водка', 'Сок лайма', 'Имбирное пиво', 'Ежевика', 'Мята', 'Лед кубиками']
-    },
+    }
 ];
