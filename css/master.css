@@ -1,17 +1,23 @@
-@import url(./aside.css);
-@import url(./body.css);
-@import url(./catalog.css);
-@import url(./cocktails.css);
-@import url(./content.css);
-@import url(./footer.css);
-@import url(./header.css);
-@import url(./ingredients.css);
-@import url(./main.css);
-@import url(./recipe.css);
-@import url(./scrollbar.css);
-@import url(./table.css);
-@import url(./titles.css);
+/* Common */
+@import url(common/body.css);
+@import url(common/content.css);
+@import url(common/footer.css);
+@import url(common/header.css);
+@import url(common/main.css);
+@import url(common/scrollbar.css);
+@import url(common/table.css);
+@import url(common/titles.css);
 
+/* Cocktail-recipe*/
+@import url(cocktail/aside.css);
+@import url(cocktail/recipe.css);
+
+/* Catalogs */
+@import url(catalogs/catalog.css);
+@import url(catalogs/cocktails.css);
+@import url(catalogs/ingredients.css);
+
+/* Calculator */
 @import url(./calculator/form.css);
 @import url(./calculator/menu.css);
 @import url(./calculator/needs.css);
