@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="feat: complete calculator and lab6">
+    <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="refactor: css files structures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/aside.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cocktail/aside.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/body.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/catalog.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalogs/catalog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/cocktails.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalogs/cocktails.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/content.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ingredients.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/catalogs/ingredients.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/recipe.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cocktail/recipe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/titles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/titles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/cocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cocktails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/gear.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gear.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ingredients.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ingredients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calculator/needs.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/calculator/needs.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +110,7 @@
       <workItem from="1732201830012" duration="8542000" />
       <workItem from="1732272420529" duration="505000" />
       <workItem from="1732274996159" duration="17839000" />
-      <workItem from="1732361903360" duration="1957000" />
+      <workItem from="1732361903360" duration="2216000" />
     </task>
     <task id="LOCAL-00001" summary="doc: add README">
       <option name="closed" value="true" />
@@ -481,14 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1732362244042</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="refactor: css files structures">
+      <option name="closed" value="true" />
+      <created>1732363960417</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1732363960417</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor: fixed some selectors in header" />
     <MESSAGE value="refactor: fixed some selectors in main" />
     <MESSAGE value="refactor: fixed some selectors in aside-block" />
     <MESSAGE value="refactor: complete refactoring" />
@@ -513,6 +503,7 @@
     <MESSAGE value="refactor: export cocktails data instead of LocalStorage. Fix cocktails double appearing in hints" />
     <MESSAGE value="fix: click on hints menu timeout" />
     <MESSAGE value="feat: complete calculator and lab6" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: complete calculator and lab6" />
+    <MESSAGE value="refactor: css files structures" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: css files structures" />
   </component>
 </project>

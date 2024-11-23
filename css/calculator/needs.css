@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
 
+    padding: 15px 15px 15px 45px;
     width: 40%;
     max-height: 1000px;
-    padding: 15px 15px 15px 45px;
     opacity: 100;
+
     transition: max-height 1s ease-in, opacity 1s ease-in;
 
     counter-reset: section;
@@ -14,6 +15,7 @@
 .needs_empty {
     max-height: 0;
     opacity: 0;
+
     transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
 
@@ -22,22 +24,28 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+
     margin: 0 0 10px 0;
+
     font-size: 24px;
     font-weight: bold;
 }
 
 .needs__item:before {
     display: inline-block;
+    position: absolute;
+
+    left: -30px;
+
+    font-size: 24px;
+
     counter-increment: section;
     content: counter(section) ".";
-    position: absolute;
-    left: -30px;
-    font-size: 24px;
 }
 
 .needs__item-name {
     height: auto;
+
     white-space: nowrap;
     text-decoration: none;
     color: inherit;
@@ -54,26 +62,28 @@
 }
 
 .needs__item-separator {
+    margin: 0 5px 7px;
     width: 100%;
     height: 0;
-    margin: 0 5px 7px;
+
     border: none;
     border-bottom: 4px dotted #264653;
 }
 
 .calculate {
     position: relative;
+
     width: 230px;
     height: auto;
 }
 
 .calculate__preloader {
     display: none;
-
     position: absolute;
-    top: 60px;
 
+    top: 60px;
     left: 75px;
+
     height: 80px;
     width: 80px;
 }
@@ -86,18 +96,18 @@
 .calculate__preloader_active {
     display: block;
 }
-
 .calculate__error {
     display: flex;
-    opacity: 0;
-    height: 0;
-
     justify-content: center;
+    position: absolute;
     align-items: center;
 
-    position: absolute;
     top: 70px;
+
     box-sizing: border-box;
+    height: 0;
+    width: 100%;
+    opacity: 0;
 
     border: 3px solid #EE8959;
     background-color: #E76F51;
@@ -106,8 +116,6 @@
     color: whitesmoke;
     font-weight: bold;
 
-    width: 100%;
-
     transition: height 0.2s ease, opacity 0.6s ease;
 }
 
@@ -115,7 +123,6 @@
     height: 45px;
     opacity: 1;
 }
-
 
 .calculate__button {
     width: 100%;
