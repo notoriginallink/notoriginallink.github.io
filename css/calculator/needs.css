@@ -1,0 +1,146 @@
+.needs {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    max-height: 1000px;
+    padding: 15px 15px 15px 45px;
+    opacity: 100;
+    transition: max-height 1s ease-in, opacity 1s ease-in;
+
+    counter-reset: section;
+}
+
+.needs_empty {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.needs__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.needs__item:before {
+    display: inline-block;
+    counter-increment: section;
+    content: counter(section) ".";
+    position: absolute;
+    left: -30px;
+    font-size: 24px;
+}
+
+.needs__item-name {
+    height: auto;
+    white-space: nowrap;
+    text-decoration: none;
+    color: inherit;
+
+    transition: color 0.3s ease;
+}
+
+.needs__item-name:hover {
+    color: #287271;
+}
+
+.needs__item-amount {
+    height: auto;
+}
+
+.needs__item-separator {
+    width: 100%;
+    height: 0;
+    margin: 0 5px 7px;
+    border: none;
+    border-bottom: 4px dotted #264653;
+}
+
+.calculate {
+    position: relative;
+    width: 230px;
+    height: auto;
+}
+
+.calculate__preloader {
+    display: none;
+
+    position: absolute;
+    top: 60px;
+
+    left: 75px;
+    height: 80px;
+    width: 80px;
+}
+
+.calculate__preloader-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.calculate__preloader_active {
+    display: block;
+}
+
+.calculate__error {
+    display: flex;
+    opacity: 0;
+    height: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 70px;
+    box-sizing: border-box;
+
+    border: 3px solid #EE8959;
+    background-color: #E76F51;
+    border-radius: 15px;
+
+    color: whitesmoke;
+    font-weight: bold;
+
+    width: 100%;
+
+    transition: height 0.2s ease, opacity 0.6s ease;
+}
+
+.calculate__error_active {
+    height: 45px;
+    opacity: 1;
+}
+
+
+.calculate__button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.3);
+
+    background-color: #287271;
+    font-weight: bold;
+    font-size: 20px;
+    color: whitesmoke;
+    text-transform: lowercase;
+
+    cursor: pointer;
+
+    transition: background-color 0.4s ease;
+}
+
+.calculate__button:hover {
+    background-color: #2A9D8F;
+}
+
+.calculate__button:active {
+    background-color: #264653;
+}
