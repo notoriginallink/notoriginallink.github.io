@@ -7,13 +7,27 @@
     <meta name="description" content="Сайт с информацией о коктейлях и всём, что с ними связано">
     <meta name="author" content="Толстов Данил M3302">
 
-    <link href="css/master.css" rel="stylesheet">
+    <link href="css/common/body.css" rel="stylesheet">
+    <link href="css/common/content.css" rel="stylesheet">
+    <link href="css/common/footer.css" rel="stylesheet">
+    <link href="css/common/header.css" rel="stylesheet">
+    <link href="css/common/main.css" rel="stylesheet">
+    <link href="css/common/scrollbar.css" rel="stylesheet">
+    <link href="css/common/titles.css" rel="stylesheet">
+
+    <link href="css/cocktail/aside.css" rel="stylesheet">
+    <link href="css/cocktail/recipe.css" rel="stylesheet">
+
+    <link href="css/catalogs/catalog.css" rel="stylesheet">
+    <link href="css/catalogs/cocktails.css" rel="stylesheet">
+    <link href="css/catalogs/ingredients.css" rel="stylesheet">
     <!--    <link href="css/outline.css" rel="stylesheet">-->
 
     <script src="js/common/load-stats.js"></script>
     <script src="js/header/active-navigation.js"></script>
-    <script src="js/header/scroll-slide.js"></script>
 
+    <script src="node_modules/headroom.js/dist/headroom.min.js"></script>
+    <script src="js/header/headroom-config.js"></script>
 </head>
 <body>
 <header class="header">
@@ -39,71 +53,70 @@
         </ul>
     </nav>
 </header>
-<div class="scroll-container">
-    <main class="main">
-        <div class="main__line">
-            <article class="block block_bordered">
-                <div class="block__line"><h1 class="title title_center title_large">Белый русский</h1></div>
-                <div class="block__line"><hr class="block__h-divider"></div>
-                <div class="block__line">
-                    <section class="content__photo-box content__photo_cocktail content_bordered content_accent">
-                        <img src="img/pretty/white_russian.jpg" alt="white_russian_cocktail" class="content__photo-img">
-                    </section>
-                    <section class="content content_recipe content_bordered content_accent">
-                        <section class="ingredients">
-                            <h2 class="title title_recipe title_medium">Что потребуется:</h2>
-                            <div style="display: flex;">
-                                <div class="ingredients__part">
-                                    <ul class="ingredients__list">
-                                        <li class="ingredients__list-item">Водка</li>
-                                        <li class="ingredients__list-item">Кофейный ликер</li>
-                                        <li class="ingredients__list-item">Нежирные сливки</li>
-                                        <li class="ingredients__list-item">Лед в кубиках</li>
-                                    </ul>
-                                </div>
-                                <div class="ingredients__divider"></div>
-                                <div class="ingredients__part">
-                                    <ul class="ingredients__list">
-                                        <li class="ingredients__list-item">Стакан Рокс</li>
-                                        <li class="ingredients__list-item">Барная ложка</li>
-                                        <li class="ingredients__list-item">Джиггер</li>
-                                        <li class="ingredients__list-item">Трубочки (по желанию)</li>
-                                    </ul>
-                                </div>
+<main class="main">
+    <div class="main__line">
+        <article class="block block_bordered">
+            <div class="block__line"><h1 class="title title_center title_large">Белый русский</h1></div>
+            <div class="block__line"><hr class="block__h-divider"></div>
+            <div class="block__line">
+                <section class="content__photo-box content__photo_cocktail content_bordered content_accent">
+                    <img src="img/pretty/white_russian.jpg" alt="white_russian_cocktail" class="content__photo-img">
+                </section>
+                <section class="content content_recipe content_bordered content_accent">
+                    <section class="ingredients">
+                        <h2 class="title title_recipe title_medium">Что потребуется:</h2>
+                        <div style="display: flex;">
+                            <div class="ingredients__part">
+                                <ul class="ingredients__list">
+                                    <li class="ingredients__list-item">Водка</li>
+                                    <li class="ingredients__list-item">Кофейный ликер</li>
+                                    <li class="ingredients__list-item">Нежирные сливки</li>
+                                    <li class="ingredients__list-item">Лед в кубиках</li>
+                                </ul>
                             </div>
-                        </section>
-                        <section>
-                            <h2 class="title title_recipe title_medium">Как готовить:</h2>
-                            <ol>
-                                <li class="ingredients__list-item">Охладить бокал и наполнить льдом доверху</li>
-                                <li class="ingredients__list-item">Налить водку, кофейный ликер и сливки по 50 мл</li>
-                                <li class="ingredients__list-item">Перемешать</li>
-                            </ol>
-                        </section>
+                            <div class="ingredients__divider"></div>
+                            <div class="ingredients__part">
+                                <ul class="ingredients__list">
+                                    <li class="ingredients__list-item">Стакан Рокс</li>
+                                    <li class="ingredients__list-item">Барная ложка</li>
+                                    <li class="ingredients__list-item">Джиггер</li>
+                                    <li class="ingredients__list-item">Трубочки (по желанию)</li>
+                                </ul>
+                            </div>
+                        </div>
                     </section>
-                </div>
-                <div class="block__line">
-                    <section class="facts">
-                        <h2 class="title title_medium">Интересное о коктейле</h2>
-                        <p>
-                            Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
-                            считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
-                            "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
-                            бла бла бла
-                        </p>
+                    <section>
+                        <h2 class="title title_recipe title_medium">Как готовить:</h2>
+                        <ol>
+                            <li class="ingredients__list-item">Охладить бокал и наполнить льдом доверху</li>
+                            <li class="ingredients__list-item">Налить водку, кофейный ликер и сливки по 50 мл</li>
+                            <li class="ingredients__list-item">Перемешать</li>
+                        </ol>
                     </section>
-                </div>
-            </article>
-            <aside class="aside">
-                <h2 class="title title_aside title_medium">Похожие коктейли</h2>
-                <ul class="recommendations">
-                    <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/preview/black-russian-preview.png" alt="black russian">Черный русский</a></li>
-                    <li><hr></li>
-                    <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/preview/B-52-preview.png" alt="b-52">Б-52</a></li>
-                    <li><hr></li>
-                    <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/preview/boston-tee-preview.png" alt="boston tee">Бостонский чай</a></li>
-                </ul>
-                <pre class="aside-art">
+                </section>
+            </div>
+            <div class="block__line">
+                <section class="facts">
+                    <h2 class="title title_medium">Интересное о коктейле</h2>
+                    <p>
+                        Рецепт был впервые опубликован в 1965 году в американской газете Oakland Tribune. Первоначально
+                        считался женским из-за приятного сладкого вкуса. Сыскал свою всемирную известность с выходом фильма
+                        "Большой Лебовски", главный герой которого не мог представить ни дня, не выпив хотя бы бокал этого коктейля.
+                        бла бла бла
+                    </p>
+                </section>
+            </div>
+        </article>
+        <aside class="aside">
+            <h2 class="title title_aside title_medium">Похожие коктейли</h2>
+            <ul class="recommendations">
+                <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/preview/black-russian-preview.png" alt="black russian">Черный русский</a></li>
+                <li><hr></li>
+                <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/preview/B-52-preview.png" alt="b-52">Б-52</a></li>
+                <li><hr></li>
+                <li><a href="index.html" class="recommendation__item-link"><img class="recommendation__item-picture" src="img/preview/boston-tee-preview.png" alt="boston tee">Бостонский чай</a></li>
+            </ul>
+            <pre class="aside-art">
                 ██▒▒██▒▒██
                   ██▒▒██▒▒
 ▒▒▒▒▒▒              ██▒▒██
@@ -123,69 +136,69 @@
           ██
       ████  ████
 </pre>
-            </aside>
-        </div>
-        <div class="main__line" style="display: none">
-            <div class="block block_bordered">
-                <div class="block__line"><h1 class="title title_large">Какая-то таблица</h1></div>
-                <div class="block__line">
-                    <table class="table">
-                        <thead class="table__header">
-                        <tr class="table__row">
-                            <th class="table__header-name">Критерий</th><th class="table__header-name">Качество</th>
-                            <th class="table__header-name">Признак</th><th class="table__header-name">Характеристика</th>
-                            <th class="table__header-name">Атрибут</th><th class="table__header-name">Свойство</th>
-                        </tr>
-                        </thead>
-                        <tbody class="table__body">
-                        <tr class="table__row">
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                            <td class="table__data">бла</td><td class="table__data">бла</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+        </aside>
+    </div>
+    <div class="main__line" style="display: none">
+        <div class="block block_bordered">
+            <div class="block__line"><h1 class="title title_large">Какая-то таблица</h1></div>
+            <div class="block__line">
+                <table class="table">
+                    <thead class="table__header">
+                    <tr class="table__row">
+                        <th class="table__header-name">Критерий</th><th class="table__header-name">Качество</th>
+                        <th class="table__header-name">Признак</th><th class="table__header-name">Характеристика</th>
+                        <th class="table__header-name">Атрибут</th><th class="table__header-name">Свойство</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table__body">
+                    <tr class="table__row">
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                        <td class="table__data">бла</td><td class="table__data">бла</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Путь к успеху</h1>
-            <hr class="footer__h-divider">
-            <pre class="code">
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Путь к успеху</h1>
+        <hr class="footer__h-divider">
+        <pre class="code">
 <code><span class="code__keyword">while</span> (<span class="code__keyword">true</span>):
-    <span class="code__keyword">if</span> (<span class="code__var">glass</span>.<span class="code__function">isEmpty</span>())
-        <span class="code__var">glass</span>.<span class="code__function">fillWithDrink</span>()
-    <span class="code__var">me</span>.<span class="code__function">drink</span>(<span class="code__var">glass</span>)</code></pre>
-        </div>
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Мотивация</h1>
-            <hr class="footer__h-divider">
-            <p><q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub></p>
+<span class="code__keyword">if</span> (<span class="code__var">glass</span>.<span class="code__function">isEmpty</span>())
+    <span class="code__var">glass</span>.<span class="code__function">fillWithDrink</span>()
+<span class="code__var">me</span>.<span class="code__function">drink</span>(<span class="code__var">glass</span>)</code></pre>
+    </div>
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Мотивация</h1>
+        <hr class="footer__h-divider">
+        <p><q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub></p>
 
-        </div>
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Контакты</h1>
-            <hr class="footer__h-divider">
-            <p>С вопросами и пожеланиями<br>tg:@notoriginallink</p>
-        </div>
-    </footer>
-</div>
+    </div>
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Контакты</h1>
+        <hr class="footer__h-divider">
+        <p>С вопросами и пожеланиями<br>tg:@notoriginallink</p>
+    </div>
+</footer>
+
 </body>
 </html>

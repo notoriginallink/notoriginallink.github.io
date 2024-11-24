@@ -1,13 +1,16 @@
 /* MAIN */
 .main {
     padding: 10px 20px 10px;
-    margin: 0 auto 0;
+    margin: 70px auto 0;
     width: 85%;
-    height: auto;
+    min-height: 50vh;
     flex: 1;
 
     background-color: #E9C46A;
     color: #264653;
+
+    /*height: auto;*/
+    /*margin: 0 auto 0; In case of scroll-container*/
 }
 
 .main__line {

@@ -1,0 +1,15 @@
+{
+  "name": "notoriginallink.github.io",
+  "version": "1.0.0",
+  "description": "- Толстов Данил\r - Группа M3302\r - Сайт про коктейли и всё что с ними связано",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "headroom.js": "^0.12.0"
+  }
+}

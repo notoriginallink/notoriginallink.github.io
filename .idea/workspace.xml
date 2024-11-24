@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="92aac663-4d93-41c1-a9fc-30fc775869ff" name="Changes" comment="refactor: css files structures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/body.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/body.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/common/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/active-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/header/active-navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calculator/calculator-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator/calculator-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calculator/calculator-input-hints.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator/calculator-input-hints.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/calculator/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/load-stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common/load-stats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/calculator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/cocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cocktails.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/gear.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/gear.html" afterDir="false" />
@@ -28,8 +25,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,27 +46,28 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.make.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.9.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.7.4&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ladyp/WebstormProjects/notoriginallink.github.io&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "Node.js.make.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "22.9.0",
+    "javascript.nodejs.core.library.typings.version": "22.7.4",
+    "last_opened_file_path": "C:/Users/ladyp/WebstormProjects/notoriginallink.github.io",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.test.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ladyp\WebstormProjects\notoriginallink.github.io\fonts" />

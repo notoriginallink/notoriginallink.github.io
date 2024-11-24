@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <title>Инвентарь</title>
 
-    <link href="../css/master.css" rel="stylesheet">
+    <link href="../css/common/body.css" rel="stylesheet">
+    <link href="../css/common/content.css" rel="stylesheet">
+    <link href="../css/common/footer.css" rel="stylesheet">
+    <link href="../css/common/header.css" rel="stylesheet">
+    <link href="../css/common/main.css" rel="stylesheet">
+    <link href="../css/common/scrollbar.css" rel="stylesheet">
+    <link href="../css/common/titles.css" rel="stylesheet">
+
+    <link href="../css/catalogs/catalog.css" rel="stylesheet">
+    <link href="../css/catalogs/cocktails.css" rel="stylesheet">
+    <link href="../css/catalogs/ingredients.css" rel="stylesheet">
+
+    <!--    <link href="css/outline.css" rel="stylesheet">-->
 
     <script src="../js/common/load-stats.js"></script>
     <script src="../js/header/active-navigation.js"></script>
+
+    <script src="../node_modules/headroom.js/dist/headroom.min.js"></script>
+    <script src="../js/header/headroom-config.js"></script>
 </head>
 <body>
 <header class="header">
@@ -33,82 +48,80 @@
         </ul>
     </nav>
 </header>
-<div class="scroll-container">
-    <main class="main">
-        <div class="main__line">
-            <div class="block block_bordered">
-                <div class="block__line"><h1 class="title title_center title_large">Инвентарь бармена</h1></div>
-                <div class="block__line"><div class="block__h-divider"></div></div>
-                <div class="block__line">
-                    <div class="catalog-list catalog-list_ingredients">
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/cocktail-spoon.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Коктейльная ложка</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/copper-cup.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Медная кружка</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/highball-glass.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Бокал Хайболл</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/jigger.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Джиггер</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/rocks-glass.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Бокал Рокс</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/shot-glass.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Стопка</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/squizer.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Сквизер</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/straws.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Трубочки</h1>
-                        </a>
-                        <a class="content content_ingredients-item content_bordered content_accent">
-                            <div class="content__photo-box content__photo_square"><img src="../img/gear/torch.jpg" class="content__photo-img"></div>
-                            <h1 class="title title_center title_ingredients">Горелка</h1>
-                        </a>
-                    </div>
+<main class="main">
+    <div class="main__line">
+        <div class="block block_bordered">
+            <div class="block__line"><h1 class="title title_center title_large">Инвентарь бармена</h1></div>
+            <div class="block__line"><div class="block__h-divider"></div></div>
+            <div class="block__line">
+                <div class="catalog-list catalog-list_ingredients">
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/cocktail-spoon.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Коктейльная ложка</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/copper-cup.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Медная кружка</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/highball-glass.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Бокал Хайболл</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/jigger.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Джиггер</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/rocks-glass.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Бокал Рокс</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/shot-glass.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Стопка</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/squizer.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Сквизер</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/straws.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Трубочки</h1>
+                    </a>
+                    <a class="content content_ingredients-item content_bordered content_accent">
+                        <div class="content__photo-box content__photo_square"><img src="../img/gear/torch.jpg" class="content__photo-img"></div>
+                        <h1 class="title title_center title_ingredients">Горелка</h1>
+                    </a>
                 </div>
-                <div class="block__line"><div class="block__h-divider"></div></div>
             </div>
+            <div class="block__line"><div class="block__h-divider"></div></div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Путь к успеху</h1>
-            <hr class="footer__h-divider">
-            <pre class="code">
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Путь к успеху</h1>
+        <hr class="footer__h-divider">
+        <pre class="code">
 <code><span class="code__keyword">while</span> (<span class="code__keyword">true</span>):
-    <span class="code__keyword">if</span> (<span class="code__var">glass</span>.<span class="code__function">isEmpty</span>())
-        <span class="code__var">glass</span>.<span class="code__function">fillWithDrink</span>()
-    <span class="code__var">me</span>.<span class="code__function">drink</span>(<span class="code__var">glass</span>)</code></pre>
-        </div>
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Мотивация</h1>
-            <hr class="footer__h-divider">
-            <p class="quote">
-                <q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub>
-            </p>
+<span class="code__keyword">if</span> (<span class="code__var">glass</span>.<span class="code__function">isEmpty</span>())
+    <span class="code__var">glass</span>.<span class="code__function">fillWithDrink</span>()
+<span class="code__var">me</span>.<span class="code__function">drink</span>(<span class="code__var">glass</span>)</code></pre>
+    </div>
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Мотивация</h1>
+        <hr class="footer__h-divider">
+        <p class="quote">
+            <q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub>
+        </p>
 
-        </div>
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Контакты</h1>
-            <hr class="footer__h-divider">
-            <p class="contacts">
-                С вопросами и пожеланиями<br>tg:@notoriginallink
-            </p>
-        </div>
-    </footer>
-</div>
+    </div>
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Контакты</h1>
+        <hr class="footer__h-divider">
+        <p class="contacts">
+            С вопросами и пожеланиями<br>tg:@notoriginallink
+        </p>
+    </div>
+</footer>
 </body>
 </html>

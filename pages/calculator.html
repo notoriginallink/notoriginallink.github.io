@@ -5,8 +5,24 @@
     <title>Калькулятор вечеринок</title>
     <link href="../img/icon.svg" rel="icon">
 
-    <link href="../css/master.css" rel="stylesheet">
-    <!--        <link href="../css/outline.css" rel="stylesheet">-->
+    <link href="../css/common/body.css" rel="stylesheet">
+    <link href="../css/common/content.css" rel="stylesheet">
+    <link href="../css/common/footer.css" rel="stylesheet">
+    <link href="../css/common/header.css" rel="stylesheet">
+    <link href="../css/common/main.css" rel="stylesheet">
+    <link href="../css/common/scrollbar.css" rel="stylesheet">
+    <link href="../css/common/titles.css" rel="stylesheet">
+
+    <link href="../css/catalogs/catalog.css" rel="stylesheet">
+    <link href="../css/catalogs/cocktails.css" rel="stylesheet">
+    <link href="../css/catalogs/ingredients.css" rel="stylesheet">
+
+    <link href="../css/calculator/form.css" rel="stylesheet">
+    <link href="../css/calculator/menu.css" rel="stylesheet">
+    <link href="../css/calculator/needs.css" rel="stylesheet">
+    <link href="../css/calculator/parameters.css" rel="stylesheet">
+
+    <!--    <link href="css/outline.css" rel="stylesheet">-->
 
     <script src="../js/common/load-stats.js"></script>
     <script src="../js/header/active-navigation.js"></script>
@@ -15,6 +31,10 @@
     <script type="module" src="../js/calculator/calculator-form.js"></script>
     <script type="module" src="../js/calculator/data.js"></script>
     <script src="../js/calculator/calculator-needs.js"></script>
+
+    <!--  Headroom.js  -->
+    <script src="../node_modules/headroom.js/dist/headroom.min.js"></script>
+    <script src="../js/header/headroom-config.js"></script>
 </head>
 <body>
 <header class="header">
@@ -40,89 +60,87 @@
         </ul>
     </nav>
 </header>
-<div class="scroll-container">
-    <main class="main">
-        <div class="main__line">
-            <div class="block block_bordered">
-                <div class="block__line"><h1 class="title title_center title_large">Калькулятор вечеринок</h1></div>
-                <div class="block__line"><hr class="block__h-divider"></div>
-                <div class="block__line">
-                    <div class="parameters-container">
-                        <div class="parameter" id="people_parameter">
-                            <div class="parameter__name">Количество человек</div>
-                            <div class="parameter__value">
-                                <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
-                                <input class="parameter__value-input" placeholder="0" type="number">
-                                <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
-                            </div>
-                        </div>
-                        <div class="parameter" id="duration_parameter">
-                            <div class="parameter__name">Длительность (часов)</div>
-                            <div class="parameter__value">
-                                <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
-                                <input class="parameter__value-input" placeholder="0" type="number" >
-                                <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
-                            </div>
-                        </div>
-                        <div class="parameter-row">
-                            <div class="parameter" id="fun_parameter">
-                                <div class="parameter__name">Желаемое веселье</div>
-                                <div class="parameter__value">
-                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
-                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
-                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
-                                    <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
-                                </div>
-                            </div>
-                            <span class="parameter-description">Завтра на работу</span>
+<main class="main">
+    <div class="main__line">
+        <div class="block block_bordered">
+            <div class="block__line"><h1 class="title title_center title_large">Калькулятор вечеринок</h1></div>
+            <div class="block__line"><hr class="block__h-divider"></div>
+            <div class="block__line">
+                <div class="parameters-container">
+                    <div class="parameter" id="people_parameter">
+                        <div class="parameter__name">Количество человек</div>
+                        <div class="parameter__value">
+                            <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
+                            <input class="parameter__value-input" placeholder="0" type="number">
+                            <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
                         </div>
                     </div>
-                </div>
-                <div class="block__line">
-                    <form class="form">
-                        <div class="form__search">
-                            <input class="form__input" type="text" id="cocktail_name" required autocomplete="off" placeholder="Название коктейля">
-                            <button class="form__submit">Добавить</button>
+                    <div class="parameter" id="duration_parameter">
+                        <div class="parameter__name">Длительность (часов)</div>
+                        <div class="parameter__value">
+                            <button class="parameter__button"><img src="../img/calculator/minus_icon.svg" class="parameter__button-img"></button>
+                            <input class="parameter__value-input" placeholder="0" type="number" >
+                            <button class="parameter__button"><img src="../img/calculator/plus_icon.svg" class="parameter__button-img"></button>
                         </div>
-                        <ul class="form__input-hints"></ul>
-                    </form>
-                </div>
-                <div class="block__line"><ul class="menu menu_empty content_accent content_bordered"></ul></div>
-
-                <div class="block__line"><h1 class="title title_large ">План покупок</h1></div>
-                <div class="block__line">
-                    <div class="calculate">
-                        <button class="calculate__button">создать</button>
-                        <div class="calculate__preloader"><img class="calculate__preloader-img" src="../img/preloader.gif"></div>
-                        <div class="calculate__error">Что-то пошло не так ⚠</div>
+                    </div>
+                    <div class="parameter-row">
+                        <div class="parameter" id="fun_parameter">
+                            <div class="parameter__name">Желаемое веселье</div>
+                            <div class="parameter__value">
+                                <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                                <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                                <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                                <button class="parameter__button"><img src="../img/calculator/drink_glass.svg" class="parameter__button-img"></button>
+                            </div>
+                        </div>
+                        <span class="parameter-description">Завтра на работу</span>
                     </div>
                 </div>
-                <div class="block__line"><ol class="needs content_bordered content_accent needs_empty"></ol></div>
             </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Путь к успеху</h1>
-            <hr class="footer__h-divider">
-            <pre class="code">
-<code><span class="code__keyword">while</span> (<span class="code__keyword">true</span>):
-    <span class="code__keyword">if</span> (<span class="code__var">glass</span>.<span class="code__function">isEmpty</span>())
-        <span class="code__var">glass</span>.<span class="code__function">fillWithDrink</span>()
-    <span class="code__var">me</span>.<span class="code__function">drink</span>(<span class="code__var">glass</span>)</code></pre>
-        </div>
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Мотивация</h1>
-            <hr class="footer__h-divider">
-            <p><q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub></p>
+            <div class="block__line">
+                <form class="form">
+                    <div class="form__search">
+                        <input class="form__input" type="text" id="cocktail_name" required autocomplete="off" placeholder="Название коктейля">
+                        <button class="form__submit">Добавить</button>
+                    </div>
+                    <ul class="form__input-hints"></ul>
+                </form>
+            </div>
+            <div class="block__line"><ul class="menu menu_empty content_accent content_bordered"></ul></div>
 
+            <div class="block__line"><h1 class="title title_large ">План покупок</h1></div>
+            <div class="block__line">
+                <div class="calculate">
+                    <button class="calculate__button">создать</button>
+                    <div class="calculate__preloader"><img class="calculate__preloader-img" src="../img/preloader.gif"></div>
+                    <div class="calculate__error">Что-то пошло не так ⚠</div>
+                </div>
+            </div>
+            <div class="block__line"><ol class="needs content_bordered content_accent needs_empty"></ol></div>
         </div>
-        <div class="footer__column">
-            <h1 class="title title_medium title_footer">Контакты</h1>
-            <hr class="footer__h-divider">
-            <p>С вопросами и пожеланиями<br>tg:@notoriginallink</p>
-        </div>
-    </footer>
-</div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Путь к успеху</h1>
+        <hr class="footer__h-divider">
+        <pre class="code">
+<code><span class="code__keyword">while</span> (<span class="code__keyword">true</span>):
+<span class="code__keyword">if</span> (<span class="code__var">glass</span>.<span class="code__function">isEmpty</span>())
+    <span class="code__var">glass</span>.<span class="code__function">fillWithDrink</span>()
+<span class="code__var">me</span>.<span class="code__function">drink</span>(<span class="code__var">glass</span>)</code></pre>
+    </div>
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Мотивация</h1>
+        <hr class="footer__h-divider">
+        <p><q>Кто не рискует - тот пьет безалкогольное.</q><sub> ©Джейсон Стетхем</sub></p>
+
+    </div>
+    <div class="footer__column">
+        <h1 class="title title_medium title_footer">Контакты</h1>
+        <hr class="footer__h-divider">
+        <p>С вопросами и пожеланиями<br>tg:@notoriginallink</p>
+    </div>
+</footer>
 </body>
 </html>
