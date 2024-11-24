@@ -1,4 +1,4 @@
-import {cocktailsData} from "../data.js";
+import {cocktailsData} from "./data.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     const inputElement = document.getElementsByClassName('form__input')[0];
